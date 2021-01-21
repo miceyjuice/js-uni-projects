@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MPC AKAI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="leftBar">
+      <img src="./assets/img/Group 14.png" alt="" class="bar-image" />
+    </div>
+    <div class="mainMixer">
+      <h2 class="mixer-title">Pads</h2>
+      <p class="mixer-description">Use your keyboard</p>
+      <div class="pads">
+        <div class="pad" id="Numpad7">
+          <audio src="./assets/audio/drum1.mp3" id="drum1" crossorigin="anonymous"></audio>
+          <p>NUM7</p>
+        </div>
+        <div class="pad" id="Numpad8">
+          <audio src="./assets/audio/clap2.mp3" id="clap2" crossorigin="anonymous"></audio>
+          <p>NUM8</p>
+        </div>
+        <div class="pad" id="Numpad9">
+          <audio src="./assets/audio/clap.mp3" id="clap" crossorigin="anonymous"></audio>
+          <p>NUM9</p>
+        </div>
+        <div class="pad" id="Numpad4">
+          <audio src="./assets/audio/kick2.mp3" id="kick2" crossorigin="anonymous"></audio>
+          <p>NUM4</p>
+        </div>
+        <div class="pad" id="Numpad5">
+          <audio src="./assets/audio/kick1.mp3" id="kick1" crossorigin="anonymous"></audio>
+          <p>NUM5</p>
+        </div>
+        <div class="pad" id="Numpad6">
+          <audio src="./assets/audio/drum2.mp3" id="drum2" crossorigin="anonymous"></audio>
+          <p>NUM6</p>
+        </div>
+
+        <div class="pad" id="Numpad1">
+          <audio src="./assets/audio/tink.mp3" id="tink" crossorigin="anonymous"></audio>
+          <p>NUM1</p>
+        </div>
+        <div class="pad" id="Numpad2">
+          <audio src="./assets/audio/snare.mp3" id="snare" crossorigin="anonymous"></audio>
+          <p>NUM2</p>
+        </div>
+        <div class="pad" id="Numpad3">
+          <audio src="./assets/audio/knock.mp3" id="knock" crossorigin="anonymous"></audio>
+          <p>NUM3</p>
+        </div>
+      </div>
+      <div class="options"></div>
+    </div>
+    <div class="controls">
+      <h2 class="controls-title">Controls</h2>
+      <p class="controls-description">
+        Record, play and save sounds on diffrent channels
+      </p>
+      <div class="record-panel">
+        <button class="record-button">
+          Record<span class="record-dot"></span>
+        </button>
+        <div class="channel-choice">
+          <p class="choice-text">Add to</p>
+          <select name="channels" id="channels">
+            <option value="channel1">Channel 1</option>
+            <option value="channel2">Channel 2</option>
+            <option value="channel3">Channel 3</option>
+            <option value="channel4">Channel 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="channel-box">
+        <ul class="channel-box-list">
+          <li class="channel-box-list-item channel-one">
+            <div class="channel-name">
+              <div class="item-music-icon"></div>
+              <p>Channel 1</p>
+            </div>
+            <div class="list-option-icons">
+              <div class="item-play-icon first-channel-play ctrl-btn"></div>
+              <div class="item-delete-icon first-channel-delete ctrl-btn"></div>
+              <div class="item-more-icon"></div>
+            </div>
+          </li>
+          <li class="channel-box-list-item channel-two">
+            <div class="channel-name">
+              <div class="item-music-icon"></div>
+              <p>Channel 2</p>
+            </div>
+            <div class="list-option-icons">
+              <div class="item-play-icon second-channel-play ctrl-btn"></div>
+              <div class="item-delete-icon second-channel-delete ctrl-btn"></div>
+              <div class="item-more-icon"></div>
+            </div>
+          </li>
+          <li class="channel-box-list-item channel-three">
+            <div class="channel-name">
+              <div class="item-music-icon"></div>
+              <p>Channel 3</p>
+            </div>
+            <div class="list-option-icons">
+              <div class="item-play-icon third-channel-play ctrl-btn"></div>
+              <div class="item-delete-icon third-channel-delete ctrl-btn"></div>
+              <div class="item-more-icon"></div>
+            </div>
+          </li>
+          <li class="channel-box-list-item channel-four">
+            <div class="channel-name">
+              <div class="item-music-icon"></div>
+              <p>Channel 4</p>
+            </div>
+            <div class="list-option-icons">
+              <div class="item-play-icon fourth-channel-play ctrl-btn"></div>
+              <div class="item-delete-icon fourth-channel-delete ctrl-btn"></div>
+              <div class="item-more-icon"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="summary-buttons">
+        <button class="play-all">PLAY ALL</button>
+        <button class="reset-all">RESET ALL</button>
+      </div>
+    </div>
+    <div class="credits"></div>
+  </div>
+  <!-- <script src="betterMain.js"></script> -->
+  <script src="main.js"></script>
+</body>
+
+</html>

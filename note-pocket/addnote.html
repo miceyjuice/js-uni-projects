@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteIT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="addnote.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sideMenu">
+        <div class="sideMenu__userInfo">
+          <div class="sideMenu__userInfo__photo">
+            <div class="sideMenu__userInfo__photo__img"></div>
+          </div>
+          <h4 class="sideMenu__userInfo__name">Sarah Johanson</h4>
+          <p class="sideMenu__userInfo__mail">sarah.johanson@email.com</p>
+        </div>
+        <div class="sideMenu__mainFeatures">
+          <ul class="sideMenu__mainFeatures__list">
+            <li class="sideMenu__mainFeatures__list__profile">
+              <div class="sideMenu__mainFeatures__list__profile__icon"></div>
+              <a href="#" class="sideMenu__mainFeatures__list__profile__link"
+                >Profile</a
+              >
+            </li>
+            <li
+              class="sideMenu__mainFeatures__list__notes sideMenu__mainFeatures__list__notes--active"
+            >
+              <div class="sideMenu__mainFeatures__list__notes__icon"></div>
+              <a href="#" class="sideMenu__mainFeatures__list__notes__link"
+                >Notes</a
+              >
+            </li>
+            <li class="sideMenu__mainFeatures__list__reminders">
+              <div class="sideMenu__mainFeatures__list__reminders__icon"></div>
+              <a href="#" class="sideMenu__mainFeatures__list__reminders__link"
+                >Reminders</a
+              >
+            </li>
+            <li class="sideMenu__mainFeatures__list__calendar">
+              <div class="sideMenu__mainFeatures__list__calendar__icon"></div>
+              <a href="#" class="sideMenu__mainFeatures__list__calendar__link"
+                >Calendar</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sideMenu__sideOptions">
+          <ul class="sideMenu__sideOptions__list">
+            <li class="sideMenu__sideOptions__list__settings">
+              <div class="sideMenu__sideOptions__list__settings__icon"></div>
+              <a href="#" class="sideMenu__sideOptions__list__settings__link">
+                Settings
+              </a>
+            </li>
+            <li class="sideMenu__sideOptions__list__logout">
+              <div class="sideMenu__sideOptions__list__logout__icon"></div>
+              <a href="#" class="sideMenu__sideOptions__list__logout__link">
+                Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="newNoteView">
+        <div class="newNoteView__heading">
+          <h1 class="newNoteView__heading__text">Add a new note</h1>
+        </div>
+        <div class="newNoteView__info">
+          <div class="newNoteView__info__title">
+            <h3 class="newNoteView__info__title__text">Title</h3>
+            <input type="text" class="newNoteView__info__title__input" />
+          </div>
+          <div class="newNoteView__info__description">
+            <h3 class="newNoteView__info__description__text">Description</h3>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="5"
+              class="newNoteView__info__description__input"
+            ></textarea>
+          </div>
+          <div class="newNoteView__info__tags">
+            <h3 class="newNoteView__info__tags__text">Tags</h3>
+            <input type="text" class="newNoteView__info__tags__input" />
+          </div>
+        </div>
+        <div class="newNoteView__buttons">
+          <button class="newNoteView__buttons__add">Add</button>
+          <button class="newNoteView__buttons__cancel">Cancel</button>
+        </div>
+      </div>
+      <div class="newNoteOptions">
+        <div class="newNoteOptions__heading">
+          <h2 class="newNoteOptions__heading__text">Note settings</h2>
+        </div>
+        <div class="newNoteOptions__color">
+          <h3 class="newNoteOptions__color__text">Color</h3>
+          <div class="newNoteOptions__color__palette">
+            <div
+              class="newNoteOptions__color__palette__default oneColor newNoteOptions__color__palette__default--active"
+            ></div>
+            <div
+              class="newNoteOptions__color__palette__turquoise oneColor"
+            ></div>
+            <div class="newNoteOptions__color__palette__orange oneColor"></div>
+            <div class="newNoteOptions__color__palette__red oneColor"></div>
+            <div class="newNoteOptions__color__palette__pink oneColor"></div>
+            <div class="newNoteOptions__color__palette__green oneColor"></div>
+          </div>
+        </div>
+        <div class="newNoteOptions__reminder">
+          <h3 class="newNoteOptions__reminder__text">Remind date</h3>
+          <div class="newNoteOptions__reminder__date">
+            <input type="date" class="newNoteOptions__reminder__date__input" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

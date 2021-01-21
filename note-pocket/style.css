@@ -1,0 +1,736 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+a {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .sideMenu {
+  height: 100vh;
+  width: 47.2rem;
+  background-color: #f9f9f9;
+  position: fixed;
+  -webkit-box-shadow: 1rem 0 1.5rem rgba(204, 204, 204, 0.3);
+          box-shadow: 1rem 0 1.5rem rgba(204, 204, 204, 0.3);
+}
+
+.container .sideMenu__userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  height: 30rem;
+}
+
+.container .sideMenu__userInfo__photo__img {
+  background-image: url(./assets/img/sarah.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 8.9rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.container .sideMenu__userInfo__name {
+  font-size: 2rem;
+  font-weight: 700;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-top: 2rem;
+}
+
+.container .sideMenu__userInfo__mail {
+  font-size: 1.4rem;
+  font-weight: 300;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container .sideMenu__mainFeatures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .sideMenu__mainFeatures__list {
+  list-style-type: none;
+}
+
+.container .sideMenu__mainFeatures__list li {
+  padding: 2rem 10rem 2rem 5rem;
+}
+
+.container .sideMenu__mainFeatures__list__profile {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sideMenu__mainFeatures__list__profile__icon {
+  background-image: url(./assets/img/user.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.container .sideMenu__mainFeatures__list__profile__link {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.container .sideMenu__mainFeatures__list__notes--active {
+  border-radius: 1rem;
+  background-color: #4e4ff8;
+  padding-left: 5rem !important;
+  width: 350px;
+  -webkit-box-shadow: 0 0 1.5rem #4e4ff8;
+          box-shadow: 0 0 1.5rem #4e4ff8;
+}
+
+.container .sideMenu__mainFeatures__list__notes {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sideMenu__mainFeatures__list__notes__icon {
+  background-image: url(./assets/img/edit-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.container .sideMenu__mainFeatures__list__notes__link {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.container .sideMenu__mainFeatures__list__reminders {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sideMenu__mainFeatures__list__reminders__icon {
+  background-image: url(./assets/img/bell.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.container .sideMenu__mainFeatures__list__reminders__link {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.container .sideMenu__mainFeatures__list__calendar {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sideMenu__mainFeatures__list__calendar__icon {
+  background-image: url(./assets/img/date.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.container .sideMenu__mainFeatures__list__calendar__link {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.container .sideMenu__sideOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 11rem;
+}
+
+.container .sideMenu__sideOptions__list li {
+  padding: 2rem 0;
+}
+
+.container .sideMenu__sideOptions__list__settings {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sideMenu__sideOptions__list__settings__icon {
+  background-image: url(./assets/img/settings.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.container .sideMenu__sideOptions__list__settings__link {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.container .sideMenu__sideOptions__list__logout {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .sideMenu__sideOptions__list__logout__icon {
+  background-image: url(./assets/img/logout.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.container .sideMenu__sideOptions__list__logout__link {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.container .mainNotesView {
+  width: 144.8rem;
+  margin-left: 50rem;
+}
+
+.container .mainNotesView__topBar {
+  position: fixed;
+  width: 135rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .mainNotesView__topBar__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #4e4ff8;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0 1.5rem rgba(78, 79, 248, 0.5);
+          box-shadow: 0 0 1.5rem rgba(78, 79, 248, 0.5);
+  height: 6.1rem;
+  padding: 0 3rem;
+  width: 50.8rem;
+  margin: 3rem 0 0 5rem;
+}
+
+.container .mainNotesView__topBar__search__icon {
+  background-image: url("./assets/img/Icon ionic-ios-search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2.2rem;
+  width: 2.1rem;
+  margin-right: 3rem;
+}
+
+.container .mainNotesView__topBar__search__input {
+  border: none;
+  font-size: 2rem;
+  outline: none;
+  width: 100%;
+}
+
+.container .mainNotesView__topBar__search__input::-webkit-input-placeholder {
+  font-size: 2rem;
+}
+
+.container .mainNotesView__topBar__search__input:-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.container .mainNotesView__topBar__search__input::-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.container .mainNotesView__topBar__search__input::placeholder {
+  font-size: 2rem;
+}
+
+.container .mainNotesView__topBar__addNote {
+  margin: 3rem 0 0 3rem;
+}
+
+.container .mainNotesView__topBar__addNote__button {
+  padding: 1.6rem 5rem;
+  font-size: 2.2rem;
+  background-color: #4e4ff8;
+  -webkit-box-shadow: 0 0 1.5rem #4e4ff8;
+          box-shadow: 0 0 1.5rem #4e4ff8;
+  border: none;
+  color: #fff;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  margin-left: -32rem;
+}
+
+.container .mainNotesView__topBar__addNote__button:hover {
+  cursor: pointer;
+}
+
+.container .mainNotesView__topBar__addNote__button__icon {
+  background-image: url("./assets/img/Icon feather-plus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 2rem;
+}
+
+.container .mainNotesView__topBar__viewOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 9rem;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+.container .mainNotesView__topBar__viewOptions__list {
+  background-image: url("./assets/img/list.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.9rem;
+  width: 2.9rem;
+}
+
+.container .mainNotesView__topBar__viewOptions__grid {
+  background-image: url("./assets/img/grid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.9rem;
+  width: 2.9rem;
+}
+
+.container .mainNotesView__listPinned {
+  visibility: hidden;
+  color: #fff;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15rem 0 5rem 10rem;
+  margin-left: -5rem;
+  -webkit-box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
+  gap: 3rem;
+}
+
+.container .mainNotesView__listPinned__title {
+  font-size: 2rem;
+  color: #3a3a3a;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container .mainNotesView__listPinned .default {
+  background-color: #4e4ff8;
+  -webkit-box-shadow: 0 0 1.5rem #4e4ff8;
+          box-shadow: 0 0 1.5rem #4e4ff8;
+}
+
+.container .mainNotesView__listPinned .turquoise {
+  background-color: #24a1aa;
+  -webkit-box-shadow: 0 0 1.5rem #24a1aa;
+          box-shadow: 0 0 1.5rem #24a1aa;
+}
+
+.container .mainNotesView__listPinned .orange {
+  background-color: #c98122;
+  -webkit-box-shadow: 0 0 1.5rem #c98122;
+          box-shadow: 0 0 1.5rem #c98122;
+}
+
+.container .mainNotesView__listPinned .red {
+  background-color: #d2332d;
+  -webkit-box-shadow: 0 0 1.5rem #d2332d;
+          box-shadow: 0 0 1.5rem #d2332d;
+}
+
+.container .mainNotesView__listPinned .pink {
+  background-color: #c84d7e;
+  -webkit-box-shadow: 0 0 1.5rem #c84d7e;
+          box-shadow: 0 0 1.5rem #c84d7e;
+}
+
+.container .mainNotesView__listPinned .green {
+  background-color: #3b9750;
+  -webkit-box-shadow: 0 0 1.5rem #3b9750;
+          box-shadow: 0 0 1.5rem #3b9750;
+}
+
+.container .mainNotesView__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+  gap: 3rem;
+  margin-left: 5rem;
+}
+
+.container .mainNotesView__list .default {
+  background-color: #4e4ff8;
+  -webkit-box-shadow: 0 0 1.5rem #4e4ff8;
+          box-shadow: 0 0 1.5rem #4e4ff8;
+}
+
+.container .mainNotesView__list .turquoise {
+  background-color: #24a1aa;
+  -webkit-box-shadow: 0 0 1.5rem #24a1aa;
+          box-shadow: 0 0 1.5rem #24a1aa;
+}
+
+.container .mainNotesView__list .orange {
+  background-color: #c98122;
+  -webkit-box-shadow: 0 0 1.5rem #c98122;
+          box-shadow: 0 0 1.5rem #c98122;
+}
+
+.container .mainNotesView__list .red {
+  background-color: #d2332d;
+  -webkit-box-shadow: 0 0 1.5rem #d2332d;
+          box-shadow: 0 0 1.5rem #d2332d;
+}
+
+.container .mainNotesView__list .pink {
+  background-color: #c84d7e;
+  -webkit-box-shadow: 0 0 1.5rem #c84d7e;
+          box-shadow: 0 0 1.5rem #c84d7e;
+}
+
+.container .mainNotesView__list .green {
+  background-color: #3b9750;
+  -webkit-box-shadow: 0 0 1.5rem #3b9750;
+          box-shadow: 0 0 1.5rem #3b9750;
+}
+
+.container .mainNotesView__list__noteBox:hover .mainNotesView__list__noteBox__options {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container .mainNotesView__list__noteBox {
+  width: 35.6rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 4rem;
+  -webkit-box-shadow: 0 0 3rem rgba(78, 79, 248, 0.3);
+          box-shadow: 0 0 3rem rgba(78, 79, 248, 0.3);
+  border-radius: 1rem;
+  background-color: #4e4ff8;
+  word-break: break-all;
+}
+
+.container .mainNotesView__list__noteBox__date {
+  font-size: 1.2rem;
+  font-weight: 300;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  letter-spacing: 0.2rem;
+}
+
+.container .mainNotesView__list__noteBox__title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-top: 1rem;
+}
+
+.container .mainNotesView__list__noteBox__description {
+  font-size: 2rem;
+  font-weight: 400;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-top: 1rem;
+}
+
+.container .mainNotesView__list__noteBox__tags {
+  font-size: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-top: 1rem;
+}
+
+.container .mainNotesView__list__noteBox__options {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.container .mainNotesView__list__noteBox__options__edit {
+  background-image: url(./assets/img/edit-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container .mainNotesView__list__noteBox__options__edit:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+}
+
+.container .mainNotesView__list__noteBox__options__pin {
+  background-image: url(./assets/img/pin-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3rem;
+  width: 1.7rem;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container .mainNotesView__list__noteBox__options__pin:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+}
+
+.container .mainNotesView__list__noteBox__options__delete {
+  background-image: url(./assets/img/delete-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container .mainNotesView__list__noteBox__options__delete:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+}
+
+.container .mainNotesView__list__noteBox__options__check {
+  height: 3rem;
+  width: 3rem;
+  border: 0.2rem solid #fff;
+  border-radius: 0.5rem;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container .mainNotesView__list__noteBox__options__check:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+}
+
+.container .mainNotesView__list__noNotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+.container .mainNotesView__list__noNotes__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container .mainNotesView__list__noNotes__box__img {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-image: url("./assets/img/edit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18.4rem;
+  height: 18.4rem;
+  -webkit-filter: opacity(20%);
+          filter: opacity(20%);
+  margin-bottom: 3rem;
+}
+
+.container .mainNotesView__list__noNotes__box__alert {
+  color: #bdbdbd;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+/*# sourceMappingURL=style.css.map */

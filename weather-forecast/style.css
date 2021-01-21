@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.search {
+  flex-basis: 100%;
+  display: flex;
+  height: 30rem;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.search__title {
+  flex-basis: 100%;
+  text-align: center;
+  align-self: flex-end;
+}
+.search__title > h2 {
+  font-weight: 300;
+  font-size: 4rem;
+  color: #fff;
+}
+.search__input {
+  flex-basis: 100%;
+  text-align: center;
+  padding-top: 1rem;
+}
+.search__input > input {
+  padding: 1.3rem 2rem;
+  width: 52rem;
+  border: none;
+  border-radius: 3rem 0 0 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  color: #586484;
+  font-size: 1.5rem;
+}
+.search__input > input::placeholder {
+  color: #aaa;
+}
+.search__input > button {
+  padding: 1.3rem 2rem;
+  border-radius: 0 3rem 3rem 0;
+  font-size: 1.5rem;
+  background-color: #586484;
+  border: none;
+  color: #fff;
+  margin: -0.4rem;
+  cursor: pointer;
+}
+.main {
+  flex-basis: 100%;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.cityBoard {
+  flex-basis: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  gap: 1.2rem;
+}
+.weatherBlock {
+  flex-basis: 19.24%;
+  height: 31.2rem;
+  display: flex;
+  border-radius: 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 0 2rem #afafaf;
+  flex-flow: column;
+  background-color: #657292;
+}
+.weatherBlock__topInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  border-radius: 2rem;
+  position: relative;
+  background-color: #fff;
+  height: fit-content;
+  padding: 1rem 2.5rem;
+}
+.weatherBlock__topInfo__left {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.weatherBlock__topInfo__left__temperature {
+  flex-basis: 100%;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #363636;
+}
+
+.weatherBlock__topInfo__left__city {
+  display: flex;
+  align-items: center;
+}
+
+.weatherBlock__topInfo__left__city > h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #363636;
+  padding-left: 0.5rem;
+}
+
+.weatherBlock__topInfo__left__city > p {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.weatherBlock__topInfo__left__city__img {
+  background-image: url("./assets/pin.png");
+  background-position: center;
+  background-size: cover;
+  height: 0.9rem;
+  width: 0.8rem;
+}
+
+.weatherBlock__topInfo__right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.weatherBlock__additionalInfo {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0 0 2rem 2rem;
+  background-color: #586484;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.weatherBlock__additionalInfo__name {
+  flex-basis: 50%;
+}
+.weatherBlock__additionalInfo__value {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+.weatherBlock__hourlyForecast {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  background-color: #657292;
+  border-radius: 2rem;
+  padding: 0.5rem 2.5rem 2rem 2.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.weatherBlock__hourlyForecast__hour {
+  display: flex;
+  flex-basis: 80%;
+}
+.weatherBlock__hourlyForecast__value {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+.weatherBlock__hourlyForecast__hour,
+.weatherBlock__hourlyForecast__value {
+  padding: 0.5rem 0;
+}
+.degree {
+  font-size: 2.5rem;
+}
